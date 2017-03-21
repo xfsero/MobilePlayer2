@@ -1,4 +1,4 @@
-package com.stupidwind.com.mobileplayer;
+package com.stupidwind.com.mobileplayer.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
+
+import com.stupidwind.com.mobileplayer.R;
 
 
 public class SplashActivity extends Activity {

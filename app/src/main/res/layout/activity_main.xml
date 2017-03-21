@@ -27,6 +27,7 @@
         android:orientation="horizontal"
         android:padding="3dp"
         >
+        
 
         <RadioButton
             android:id="@+id/rb_video"
