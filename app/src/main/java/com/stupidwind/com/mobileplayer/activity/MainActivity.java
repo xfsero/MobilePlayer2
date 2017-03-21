@@ -11,8 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
 import com.stupidwind.com.mobileplayer.R;
-import com.stupidwind.com.mobileplayer.activity.base.BasePager;
+import com.stupidwind.com.mobileplayer.base.BasePager;
 import com.stupidwind.com.mobileplayer.activity.pager.*;
+import com.stupidwind.com.mobileplayer.pager.AudioPager;
+import com.stupidwind.com.mobileplayer.pager.NetAudioPager;
+import com.stupidwind.com.mobileplayer.pager.NetVideoPager;
+import com.stupidwind.com.mobileplayer.pager.VideoPager;
 
 import java.util.ArrayList;
 

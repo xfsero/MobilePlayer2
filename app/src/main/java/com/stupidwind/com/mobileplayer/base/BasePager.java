@@ -1,4 +1,4 @@
-package com.stupidwind.com.mobileplayer.activity.base;
+package com.stupidwind.com.mobileplayer.base;
 
 import android.content.Context;
 import android.view.View;
