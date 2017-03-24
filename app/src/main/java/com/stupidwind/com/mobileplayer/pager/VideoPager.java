@@ -2,6 +2,7 @@ package com.stupidwind.com.mobileplayer.pager;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.net.Uri;
@@ -17,6 +18,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.stupidwind.com.mobileplayer.R;
+import com.stupidwind.com.mobileplayer.activity.SystemVideoPlayer;
 import com.stupidwind.com.mobileplayer.adapter.VideoPagerAdapter;
 import com.stupidwind.com.mobileplayer.base.BasePager;
 import com.stupidwind.com.mobileplayer.domain.MediaItem;
@@ -86,7 +88,9 @@ public class VideoPager extends BasePager {
             MediaItem mediaItem = mediaItems.get(position);
 
             //打开播放器
-
+            Intent intent = new Intent(context, SystemVideoPlayer.class);
+            intent.setDataAndType(Uri.parse(mediaItem.getData()), "Video/*");
+            context.startActivity(intent);
         }
     }
 
